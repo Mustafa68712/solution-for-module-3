@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    <style>
+      .navbar-header button.navbar-toggle, .nabar-header .icon-bar
+ {border: 1px solid #61122f;}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+
+
+#bp {background-color:transparent;
+   
+    border: 0.2px solid black;
+    margin: 30px auto 10px;}
+   
+
+    .p1 {background-color:transparent;
+      font-size: 1.4em;
+      width: 250px;
+      height: auto;
+      text-align: center;
+      margin: 5px auto 10px;}
+  h1 {font-size: 2em;
+    margin: 10px 10px 10px 10px;
+    text-align: center;}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  width: auto;
+  height: 100px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+
+
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+
+
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  }
+  /* End Header */
+
+  
+
+  /* Home Page */
+  .container {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+.navbar-header button.navbar-toggle {
+clear: both;}
+
+
+@media (max-width: 2000px) and (min-width: 768px) {
+  #yt {visibility: hidden;}
+
+
+
+
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment Solution for Module 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1 id="QW">Food,LLC</h1></a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="yt">
+              <a href="menu-categories.html">
+                <br class="hidden-xs">Chicken</a>
+            </li>
+            <li id="yt">
+              <a href="#">
+                 <br class="hidden-xs">Beef</a>
+            </li>
+            <li id="yt">
+              <a href="#">
+                 <br class="hidden-xs">Sushi</a>
+            </li>
+            </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+  <h1>Our Menu</h1>
+<div class="col-md-12,col-sm-12,col-xs-12">
+  <div id="bp" class="col-sm-4,col-xs-6,col-lg-3">
+  <p class="p1">Chicken</p><br>
+  lorem ipsumm dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor inciddiunt ut labore et dolore magna
+  aliqua. Ut emin ad minim veniam, quiis nostrud exercitation
+  ullamco laboris nii ut aliquip ex ea commodo consequatlorem
+  ipsumm dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor inciddiunt ut labore et dolore magna aliqua.
+        Ut emin ad minim veniam, quiis nostrud exercitation ullamco
+         laboris nii ut aliquip ex ea commodo consequatlorem ipsumm
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+           tempor inciddiunt ut labore et dolore magna aliqua. Ut emin
+            ad minim veniam, quiis nostrud exercitation ullamco laboris
+             nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim 
+          veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip
+           ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et
+             dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud
+              exercitation ullamco laboris nii ut aliquip ex ea commodo 
+            consequatlorem ipsumm dolor sit amet, consectetur adipiscing
+             elit, sed do eiusmod tempor inciddiunt ut labore et dolore
+              magna aliqua. Ut emin ad minim veniam, quiis nostrud 
+            exercitation ullamco laboris nii ut aliquip ex ea commodo 
+          consequat</div>
+
+</div>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  
+
+</body>
+</html>
